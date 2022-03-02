@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es" id="main" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Landing Page</title>
+  <!-- Estilos de tailwindcss -->
+  <link rel="stylesheet" href="./css/tailwind.css">
+  <!-- Estilos Personales -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Iconos de material design -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-slate-100 dark:bg-slate-900" id="content">
+  <div class="overflow-hidden"></div>
+  <header id="header" class="top-0 left-0 z-40 w-full bg-blue-500 dark:bg-slate-700 text-white p-4">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center">
+        <!-- Titulo -->
+        <a href="#" id="page-title" class=" font-semibold text-lg italic md:text-xl">Personal Page</a>
+        <!-- Fin Titulo -->
+        <!-- Navbar Escritorio -->
+        <nav id="navigation-desktop" class="hidden md:block">
+          <ul class="flex items-center gap-5">
+            <li>
+              <a href="#" class="font-semibold hover:text-gray-600 dark:text-gray-200">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#skills" class="font-semibold hover:text-gray-600 dark:text-gray-200">
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="font-semibold hover:text-gray-600 dark:text-gray-200">
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Fin Navbar Escritorio -->
+        <!-- Barra de icons -->
+        <div>
+          <ul class="flex justify-center gap-5">
+            <li>
+              <a href="#">
+                <img id="darkmode-toggle" src="./icons/light/dark-mode.svg" alt="light mode" class="w-8">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./icons/light/github.svg" alt="github" class="w-8">
+              </a>
+            </li>
+            <li>
+              <a href="#" id="navigation-toggle" class="md:hidden">
+                <img src="./icons/light/menu.svg" alt="menu" class="w-8">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Fin Barra de iconos -->
+      </div>
+    </div>
+  </header>
+  <!-- Navbar Movil -->
+  <nav id="navigation-mobile"
+    class="fixed top-0 left-0 h-screen w-screen bg-white dark:bg-slate-900 dark:bg-opacity-95 bg-opacity-95 z-50 p-5 hidden md:hidden">
+    <!-- Navbar Header -->
+    <div class="flex justify-start my-5">
+      <a href="#" id="navigation-close">
+        <img src="./icons/dark/close.svg" alt="menu" class="w-8">
+      </a>
+    </div>
+    <!-- Navbar Body -->
+    <ul class="flex flex-col gap-10 items-center my-32">
+      <li>
+        <a href="#" class="flex gap-2 text-gray-700 dark:text-white font-semibold hover:text-blue-500">
+          <span class="material-icons">home</span>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#skills" class="flex gap-2 text-gray-700 dark:text-white font-semibold hover:text-blue-500">
+          <span class="material-icons">list</span>
+          Skills
+        </a>
+      </li>
+      <li>
+        <a href="#contact" class="flex gap-2 text-gray-700 dark:text-white font-semibold hover:text-blue-500">
+          <span class="material-icons">phone</span>
+          Contact
+        </a>
+      </li>
+    </ul>
+    <!-- Navbar Footer -->
+    <div class="flex justify-center gap-4 my-32">
+      <a href="#">
+        <img src="./icons/dark/facebook.svg" alt="facebook" class="w-8">
+      </a>
+      <a href="#">
+        <img src="./icons/dark/youtube.svg" alt="youtube" class="w-8">
+      </a>
+      <a href="#">
+        <img src="./icons/dark/whatsapp.svg" alt="whatsapp" class="w-8">
+      </a>
+    </div>
+  </nav>
+  <!-- Fin Navbar Movil -->
+  <!-- Seccion Principal -->
+  <main>
+    <!-- Seccion de Inicio -->
+    <section class="bg-blue-500 dark:bg-slate-700 p-4">
+      <div class="container mx-auto px-4 md:px-52">
+        <div class="flex flex-col justify-center items-center">
+          <img class="w-40 h-40 my-5 rounded-full shadow-2xl md:w-80 md:h-80" src="./img/your-photo.jpg" alt="">
+          <div>
+            <h5 class="text-white font-bold text-3xl text-center mt-5">Your Name</h5>
+            <span class="block text-white opacity-50 text-sm text-center mb-5">Cloud arquitect - Backend developer - Python
+              developer</span>
+            <p class="text-white text-center my-5">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem similique dolores quisquam rem
+              impedit maxime nulla cumque voluptates ipsum odio assumenda ab, laudantium fugiat tenetur, aut ratione
+              consectetur hic magni.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin de la seccion de Inicio -->
+
+    <!-- Seccion Habilidades -->
+    <section id="skills" class="p-4">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col justify-center items-center">
+          <h5 class="title dark:text-white">Skills</h5>
+          <p class="text-gray-400 text-center dark">Lorem ipsum dolor sit.</p>
+          <div class="grid grid-cols-1 gap-5 md:grid-cols-3">
+            <div class="card">
+              <img src="./img/python-logo.png" alt="python" class="w-32 block mx-auto">
+              <h6 class="subtitle">Python</h6>
+              <p class="text-gray-400 text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
+                illum eaque? Illo repudiandae asperiores
+                beatae ducimus. Reiciendis veniam nisi quos inventore aspernatur? Accusantium labore voluptatibus
+                eligendi
+                magni voluptate vel cumque.</p>
+            </div>
+            <div class="card">
+              <img src="./img/angular-logo.png" alt="angular" class="w-32 block mx-auto">
+              <h6 class="subtitle">Angular</h6>
+              <p class="text-gray-400 text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
+                illum eaque? Illo repudiandae asperiores
+                beatae ducimus. Reiciendis veniam nisi quos inventore aspernatur? Accusantium labore voluptatibus
+                eligendi
+                magni voluptate vel cumque.</p>
+            </div>
+            <div class="card">
+              <img src="./img/azure-logo.png" alt="azure" class="w-32 block mx-auto">
+              <h6 class="subtitle">Azure</h6>
+              <p class="text-gray-400 text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
+                illum eaque? Illo repudiandae asperiores
+                beatae ducimus. Reiciendis veniam nisi quos inventore aspernatur? Accusantium labore voluptatibus
+                eligendi
+                magni voluptate vel cumque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin de las Seccion Habilidades -->
+    <section id="contact" class="p-5">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <!-- Formulario para enviar un email -->
+          <div>
+            <h5 class="text-white font-bold text-xl text-center">Send an email</h5>
+            <p class="text-white opacity-80 text-center mb-5">Let's Start a Conversation</p>
+            <form class="card">
+              <div class="form-group">
+                <label for="field-name" class="form-label">Name</label>
+                <input type="text" placeholder="Enter your name" name="field-name" id="field-name"
+                  class="form-control field-normal" required>
+              </div>
+              <div class="form-group">
+                <label for="field-email" class="form-label">Email</label>
+                <input type="email" placeholder="name@mail.com" name="field-email" id="field-email"
+                  class="form-control field-normal" required>
+              </div>
+              <div class="form-group">
+                <label for="field-message" class="form-label">Message</label>
+                <textarea placeholder="Enter your message" name="field-message" id="field-message" cols="30" rows="5"
+                  class="form-control field-normal"></textarea>
+              </div>
+              <div class="form-group flex justify-end gap-5">
+                <button type="button" class="btn btn-secondary" id="btn-clear">
+                  <span class="material-icons">delete</span>
+                  Clear
+                </button>
+                <button type="submit" class="btn btn-primary" id="btn-send">
+                  <span class="material-icons">mail</span>
+                  Send
+                </button>
+                <div class="field-error hidden"></div>
+              </div>
+            </form>
+            <!-- Fin del Formulario -->
+          </div>
+          <!-- Lista con mas contactos -->
+          <div>
+            <h5 class="text-white font-bold text-xl text-center">Personal References</h5>
+            <p class="text-white opacity-80 text-center mb-5">Lorem, ipsum dolor.</p>
+            <div class="grid grid-cols-1">
+              <div class="card">
+                <h6 class="text-gray-700 dark:text-white font-bold text-xl pb-2">Cristiano Ronaldo</h6>
+                <p class="italic text-gray-400 font-light">
+                  "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, nesciunt vitae pariatur eveniet"
+                </p>
+                <a href="#" class="flex gap-2 text-sm my-2 text-gray-700 dark:text-white"><i
+                    class="material-icons">email</i>elbicho@mail.com</a>
+                <a href="#" class="flex gap-2 text-sm my-2 text-gray-700 dark:text-white"><i
+                    class="material-icons">phone</i>3011122334</a>
+              </div>
+              <div class="card">
+                <h6 class="text-gray-700 dark:text-white font-bold text-xl pb-2">Bryan Myers</h6>
+                <p class="italic text-gray-400 font-light">
+                  "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, nesciunt vitae pariatur eveniet"
+                </p>
+                <a href="#" class="flex gap-2 text-sm my-2 text-gray-700 dark:text-white"><i
+                    class="material-icons">email</i>bryanmyers@mail.com</a>
+                <a href="#" class="flex gap-2 text-sm my-2 text-gray-700 dark:text-white"><i
+                    class="material-icons">phone</i>3011122334</a>
+
+              </div>
+            </div>
+          </div>
+          <!-- Fin de las lista -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- Fin de la seccion principal -->
+  <footer class="text-center bg-gray-700 p-2">
+    <div class="flex justify-center gap-4 my-4">
+      <a href="#">
+        <img src="./icons/light/facebook.svg" alt="facebook" class="w-8">
+      </a>
+      <a href="#">
+        <img src="./icons/light/youtube.svg" alt="youtube" class="w-8">
+      </a>
+      <a href="#">
+        <img src="./icons/light/whatsapp.svg" alt="whatsapp" class="w-8">
+      </a>
+    </div>
+    <span class="text-white font-semibold text-sm">&copy;2022 Juan Quintero. All rights reserved.</span>
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

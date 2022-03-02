@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .title {
+    @apply text-gray-700 font-bold text-2xl text-center;
+  }
+  .subtitle {
+    @apply text-gray-700 font-bold text-xl text-center dark:text-white;
+  }
+  .card {
+    @apply bg-white dark:bg-slate-700 my-2 p-5 rounded-xl shadow-sm flex flex-col;
+  }
+  .form-group {
+    @apply mb-2;
+  }
+  .form-label {
+    @apply text-gray-700 text-xs font-bold uppercase;
+  }
+  .form-control {
+    @apply w-full rounded py-2 px-4 outline-none font-semibold text-gray-700 focus:bg-white focus:border-blue-500;
+  }
+  .field-error {
+    @apply bg-red-100 border-2 border-red-200;
+  }
+  .field-normal {
+    @apply bg-gray-200 border-2 border-gray-200 dark:bg-slate-800 dark:border-slate-800;
+  }
+  .btn {
+    @apply bg-transparent flex justify-center gap-2 p-2 font-semibold;
+  }
+  .btn-primary {
+    @apply text-gray-400 hover:text-blue-500;
+  }
+  .btn-secondary {
+    @apply text-gray-400 hover:text-red-500;
+  }
+}

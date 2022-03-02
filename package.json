@@ -1,0 +1,10 @@
+{
+  "name": "personal-landing-page",
+  "version": "1.0.0",
+  "description": "Tailwind Personal Page",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
